@@ -1,0 +1,35 @@
+.list__item {
+  color: var(--white);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.number__container {
+  background: transparent;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+}
+
+.instructions__container {
+    display: none;
+  }
+
+@media (min-width: 920px) {
+  .instructions__container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  .instructions__container > p {
+    color: var(--light-blue);
+  }
+}
