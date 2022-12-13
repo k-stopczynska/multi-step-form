@@ -1,0 +1,26 @@
+.form__control {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 20%;
+}
+
+.form__controls,
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__wrapper {
+  margin-top: 1.5em;
+}
+
+.input__field {
+  border: 1px solid var(--cool-gray);
+  border-radius: var(--border-radius-accent);
+  padding: 0.7em;
+}
+
+label {
+  font-size: 14px;
+}

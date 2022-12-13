@@ -6,14 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
 #root {
   --marine-blue: hsl(213, 96%, 18%);
   --purplish-blue: hsl(243, 100%, 62%);
@@ -32,3 +24,14 @@ body {
   --border-radius-main: 13px;
   --border-radius-accent: 5px;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+  height: 100vh;
+  width: 100vw;
+}
+
+
