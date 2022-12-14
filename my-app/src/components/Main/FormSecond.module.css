@@ -30,5 +30,6 @@ label {
 .radio#arcade:checked ~ label1,
 .radio#advanced:checked ~ label2,
 .radio#pro:checked ~ label3 {
-  scale: 1.4;
+  border: 1px solid red;
 }
+

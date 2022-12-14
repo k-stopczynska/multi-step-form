@@ -1,4 +1,5 @@
 import { Field, Form } from "formik";
+import CustomCheckbox from './CustomCheckbox';
 import logo1 from "../../assets/images/icon-arcade.svg";
 import logo2 from "../../assets/images/icon-advanced.svg";
 import logo3 from "../../assets/images/icon-pro.svg";
@@ -30,6 +31,7 @@ const FormSecond = () => {
           <p>price</p>
         </div>
       </div>
+    <CustomCheckbox />
     </Form>
   );
 };

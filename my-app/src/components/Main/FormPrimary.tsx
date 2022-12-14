@@ -9,6 +9,7 @@ const FormPrimary = () => {
     email: string;
     phone: string;
     picked: string;
+    toggle: boolean;
   }
 
   return (
@@ -19,6 +20,7 @@ const FormPrimary = () => {
           email: "",
           phone: "",
           picked: "",
+          toggle: false,
         }}
         onSubmit={(
           values: Values,
@@ -30,10 +32,16 @@ const FormPrimary = () => {
           }, 500);
         }}
       >
+
+
+
         <FormSecond />
+
+
       </Formik>
     </div>
-  );
+
+  )
 };
 
 export default FormPrimary;
