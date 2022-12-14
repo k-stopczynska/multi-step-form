@@ -1,0 +1,18 @@
+.button__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    height: 70px;
+    width: 100%;
+}
+
+.button__forward {
+    color: var(--white);
+background: var(--marine-blue);
+}
+
+.button__reward {
+    background: transparent;
+    border: none;
+}

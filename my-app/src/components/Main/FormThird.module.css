@@ -1,0 +1,26 @@
+.form__control {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 20%;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .form__controls {
+    border: 1px solid var(--cool-gray);
+    border-radius: var(--border-radius-accent);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7em;
+  }
+
+  .form__text {
+    display: flex;
+    flex-direction: column;
+  }

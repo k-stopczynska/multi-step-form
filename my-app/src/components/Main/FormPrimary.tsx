@@ -1,6 +1,7 @@
 import { Formik, FormikHelpers } from "formik";
 //import FormFirst from "./FormFirst";
-import FormSecond from "./FormSecond";
+//import FormSecond from "./FormSecond";
+import FormThird from './FormThird';
 import classes from "./FormPrimary.module.css";
 
 const FormPrimary = () => {
@@ -35,7 +36,7 @@ const FormPrimary = () => {
 
 
 
-        <FormSecond />
+        <FormThird />
 
 
       </Formik>

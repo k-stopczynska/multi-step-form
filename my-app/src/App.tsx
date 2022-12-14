@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Section from './components/Main/Section';
 import FormPrimary from './components/Main/FormPrimary';
+import StepChanger from './components/Footer/StepChanger';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <FormPrimary />
         </div>
       </main>
+      <footer>
+        <StepChanger />
+      </footer>
     </div>
   );
 }

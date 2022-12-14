@@ -1,0 +1,6 @@
+button {
+    border-radius: var(--border-radius-accent);
+    font-family: var(--font-family);
+    font-weight: 500;
+    padding: .7em 1em;
+}
