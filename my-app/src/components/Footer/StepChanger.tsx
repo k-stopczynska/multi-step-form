@@ -7,7 +7,7 @@ const StepChanger = () => {
     console.log("ajm changing page!");
   };
   return (
-    <footer className={classes.button__container}>
+    <div className={classes.button__container}>
       <Button
         name={names[0]}
         type="button"
@@ -21,7 +21,7 @@ const StepChanger = () => {
         onClick={stepChangeHandler}
         classes={classes.button__forward}
       ></Button>
-    </footer>
+    </div>
   );
 };
 
