@@ -1,14 +1,34 @@
 import React, { useState, useEffect } from "react";
-
+import FormFirst from '../components/Main/FormFirst';
+import FormSecond from '../components/Main/FormSecond';
+import FormThird from '../components/Main/FormThird';
+import ThankYouCard from '../components/Main/ThankYouCard';
+import {Values} from '../interfaces';
 
 const PageContext = React.createContext({
     //change types
-  onClick: (offset: any) => {},
-  page: 1,
+  onSubmit: (data: Values) => {},
+  onClick: (data: Values) => {},
+  page: 0,
+  data: {
+    name: "",
+    email: "",
+    phone: "",
+     picked: "",
+     toggle: false,
+  },
 });
 
 export const PageContextProvider = (props: any) => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
+  const [data, setData] = useState({
+      name: "",
+      email: "",
+      phone: "",
+       picked: "",
+       toggle: false,
+    })
+  const pages = [<FormFirst />, <FormSecond />, <FormThird />, <ThankYouCard />];
 
   useEffect(() => {
     const pageChosen = JSON.parse(localStorage.getItem('page') || '');
@@ -19,13 +39,16 @@ export const PageContextProvider = (props: any) => {
     localStorage.setItem('page', JSON.stringify(page));
   }, [page]);
 
-  const pageHandler = (offset: any) => {
-    return offset === 1
-      ? setPage((prevPage) => prevPage + 1)
-      : setPage((prevPage) => prevPage - 1);
+  const submitHandler = (newData: Values) => {
+    setData((prevData) => ({...prevData, ...newData}));
+    setPage((prevPage) => prevPage + 1)
+  };
+  const clickHandler = (newData: Values) => {
+    setData((prevData) => ({...prevData, ...newData}));
+    setPage((prevPage) => prevPage - 1)
   };
   return (
-    <PageContext.Provider value={{ onClick: pageHandler, page: page }}>
+    <PageContext.Provider value={{ onSubmit: submitHandler, onClick: clickHandler, page: page, data: data  }}>
       {props.children}
     </PageContext.Provider>
   );

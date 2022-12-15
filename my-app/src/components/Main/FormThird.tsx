@@ -1,4 +1,5 @@
 import { Field, Form } from "formik";
+import StepChanger from '../Footer/StepChanger';
 import classes from "./FormThird.module.css";
 const FormThird = () => {
   return (
@@ -48,6 +49,7 @@ const FormThird = () => {
         </div>
         <p>price</p>
       </div>
+      <StepChanger />
     </Form>
   );
 };

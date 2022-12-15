@@ -1,19 +1,12 @@
 import { Formik, FormikHelpers } from "formik";
 import FormFirst from "./FormFirst";
 //import FormSecond from "./FormSecond";
-import FormThird from './FormThird';
+//import FormThird from './FormThird';
 
 
 import classes from "./FormPrimary.module.css";
 
 const FormPrimary = () => {
-  interface Values {
-    name: string;
-    email: string;
-    phone: string;
-    picked: string;
-    toggle: boolean;
-  }
 
   return (
     <div className={classes.form__control}>
@@ -22,8 +15,8 @@ const FormPrimary = () => {
           name: "",
           email: "",
           phone: "",
-          picked: "",
-          toggle: false,
+          // picked: "",
+          // toggle: false,
         }}
         onSubmit={(
           values: Values,
@@ -35,9 +28,12 @@ const FormPrimary = () => {
           }, 500);
         }}
       >
-
+        {() => (
+           <FormFirst />
+        )}
+  
       </Formik>
-      <FormFirst />
+   
     </div>
 
   )

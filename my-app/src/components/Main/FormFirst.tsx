@@ -1,4 +1,5 @@
 import { Field, Form } from "formik";
+import StepChanger from '../Footer/StepChanger';
 import classes from "./FormFirst.module.css";
 const FormFirst = () => {
   return (
@@ -30,6 +31,7 @@ const FormFirst = () => {
           placeholder="+1 234 567 890"
         />
       </div>
+      <StepChanger />
     </Form>
   );
 };
