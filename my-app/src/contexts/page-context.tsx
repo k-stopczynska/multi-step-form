@@ -28,16 +28,16 @@ export const PageContextProvider = (props: any) => {
        picked: "",
        toggle: false,
     })
-  const pages = [<FormFirst />, <FormSecond />, <FormThird />, <ThankYouCard />];
 
-  useEffect(() => {
-    const pageChosen = JSON.parse(localStorage.getItem('page') || '');
-    setPage(pageChosen);
-  }, []);
+  // useEffect(() => {
+  //   const pageChosen = JSON.parse(localStorage.getItem('page'));
+  //   setPage(pageChosen);
 
-  useEffect(() => {
-    localStorage.setItem('page', JSON.stringify(page));
-  }, [page]);
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem('page', JSON.stringify(page));
+  // }, [page]);
 
   const submitHandler = (newData: Values) => {
     setData((prevData) => ({...prevData, ...newData}));
