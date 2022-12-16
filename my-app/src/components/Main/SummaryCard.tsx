@@ -1,17 +1,34 @@
-import { useContext } from 'react';
-import  PageContext from '../../contexts/page-context';
+import { useContext } from "react";
+import { Form } from "formik";
+import PageContext from "../../contexts/page-context";
+import StepChanger from "../Footer/StepChanger";
+import classes from "./SummaryCard.module.css";
 
 const SummaryCard = () => {
-    const pageCtx = useContext(PageContext);
-    return (
-        <div>
-        <div>{pageCtx.data.name}</div>
-        <div>{pageCtx.data.email}</div>
-        <div>{pageCtx.data.phone}</div>
-        <div>{pageCtx.data.toggle}</div>
-        <div>{pageCtx.data.picked}</div>
-        <div>{pageCtx.data.addons}</div>
+  const pageCtx = useContext(PageContext);
+  return (
+    <Form className={classes.card__wrapper}>
+      <div className={classes.card__container}>
+        <div className={classes.card__paragraph}>
+          <p>
+            {pageCtx.data.picked} (
+            {pageCtx.data.toggle === false ? "Monthly" : "Yearly"})
+          </p>
+          <p>price</p>
         </div>
-    )
-}
+        <div className={classes.card__paragraph}>
+          {pageCtx.data.addons.map((addon) => (
+            <p key={addon}>{addon}</p>
+          ))}
+          <p>price</p>
+        </div>
+      </div>
+      <div className={classes.card__paragraph_total}>
+        <p>Total (per {pageCtx.data.toggle === false ? "month" : "year"})</p>
+        <p>price</p>
+      </div>
+      <StepChanger />
+    </Form>
+  );
+};
 export default SummaryCard;

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {Values} from '../interfaces';
 
 const PageContext = React.createContext({
-    //change types
   onSubmit: (data: Values) => {},
   onClick: (data: Values) => {},
   page: 0,

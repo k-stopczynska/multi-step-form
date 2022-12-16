@@ -1,0 +1,31 @@
+.card__wrapper {
+    margin-top: 2rem;
+    height: 80%;
+    width: 100%;
+}
+
+.card__container {
+    background: var(--light-gray);
+    border-radius: var(--border-radius-accent);
+}
+
+.card__paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 2;
+    margin: 0 1em;
+    padding: 1em 0;
+}
+
+.card__paragraph:nth-child(1) {
+    border-bottom: 1px solid var(--marine-blue);
+    font-weight: 700;
+}
+
+.card__paragraph_total {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

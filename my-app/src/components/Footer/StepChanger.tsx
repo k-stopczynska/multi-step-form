@@ -1,8 +1,7 @@
-import { useContext } from 'react';
+import { useContext } from "react";
 import Button from "../../UI/Button";
-import PageContext from '../../contexts/page-context';
+import PageContext from "../../contexts/page-context";
 import classes from "./StepChanger.module.css";
-import { Values } from '../../interfaces'
 
 const StepChanger = () => {
   const names = ["Go Back", "Next Step", "Confirm"];
@@ -17,12 +16,12 @@ const StepChanger = () => {
       <Button
         name={names[0]}
         type="button"
-       onClick={prevStepHandler}
+        onClick={prevStepHandler}
         classes={classes.button__reward}
       ></Button>
 
       <Button
-        name={names[1]}
+        name={pageCtx.page + 1 !== 4 ? names[1] : names[2]}
         type="submit"
         classes={classes.button__forward}
       ></Button>

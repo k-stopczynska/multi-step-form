@@ -12,7 +12,7 @@ const FormSecond = () => {
         <img src={logo1} alt="logo-arcade"></img>
         <div className={classes.label__wrapper}>
           <label className={classes.label1} htmlFor="arcade">Arcade</label>
-          <Field className={classes.radio} id="arcade" type="radio" name="picked" value="arcade"></Field>
+          <Field className={classes.radio} id="arcade" type="radio" name="picked" value="Arcade"></Field>
           <p>price</p>
         </div>
       </div>
@@ -20,7 +20,7 @@ const FormSecond = () => {
         <img src={logo2} alt="logo-advanced"></img>
         <div className={classes.label__wrapper}>
           <label className={classes.label2} htmlFor="advanced"> Advanced </label>
-          <Field className={classes.radio} id="advanced" type="radio" name="picked" value="advanced"></Field>
+          <Field className={classes.radio} id="advanced" type="radio" name="picked" value="Advanced"></Field>
           <p>price</p>
         </div>
       </div>
@@ -28,7 +28,7 @@ const FormSecond = () => {
         <img src={logo3} alt="logo-pro"></img>
         <div className={classes.label__wrapper}>
           <label className={classes.label3} htmlFor="pro">Pro</label>
-          <Field className={classes.radio} id="pro" type="radio" name="picked" value="pro"></Field>
+          <Field className={classes.radio} id="pro" type="radio" name="picked" value="Pro"></Field>
           <p>price</p>
         </div>
       </div>

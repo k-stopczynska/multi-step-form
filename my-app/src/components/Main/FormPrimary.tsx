@@ -6,18 +6,17 @@ import FormFirst from "./FormFirst";
 import FormSecond from "./FormSecond";
 import FormThird from "./FormThird";
 import SummaryCard from './SummaryCard';
+import ThankYouCard from './ThankYouCard';
 import { Values } from "../../interfaces";
 import classes from "./FormPrimary.module.css";
 
 const FormPrimary = () => {
-  const pages = [<FormFirst />, <FormSecond />, <FormThird />, <SummaryCard />];
+  const pages = [<FormFirst />, <FormSecond />, <FormThird />, <SummaryCard />, <ThankYouCard />];
 
   const pageCtx = useContext(PageContext);
 
   const handleSubmit = (values: Values) => {
     pageCtx.onSubmit(values);
-    console.log(pageCtx.data)
-    console.log(pageCtx.page)
   };
 
   return (
