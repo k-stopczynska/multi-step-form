@@ -34,6 +34,7 @@ const FormFirst = () => {
           placeholder="+1 234 567 890"
         />
       </div>
+
       <StepChanger />
     </Form>
   );

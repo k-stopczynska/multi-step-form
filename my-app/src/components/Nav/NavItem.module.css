@@ -6,7 +6,8 @@
   gap: 1em;
 }
 
-.number__container {
+.number__container,
+.active {
   background: transparent;
   border: 1px solid var(--white);
   border-radius: 50%;
@@ -15,6 +16,12 @@
   justify-content: center;
   height: 2rem;
   width: 2rem;
+}
+
+.active {
+ background: var(--pastel-blue);
+ color: var(--marine-blue);
+ font-weight: 700
 }
 
 .instructions__container {
