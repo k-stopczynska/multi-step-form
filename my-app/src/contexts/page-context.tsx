@@ -10,8 +10,9 @@ const PageContext = React.createContext({
     name: "",
     email: "",
     phone: "",
-     picked: "",
-     toggle: false,
+    picked: "",
+    toggle: false,
+    addons: []
   },
 });
 
@@ -23,6 +24,7 @@ export const PageContextProvider = (props: any) => {
       phone: "",
       picked: "",
       toggle: false,
+      addons: []
     })
 
   // useEffect(() => {
