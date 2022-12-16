@@ -1,19 +1,27 @@
+import { useContext } from "react";
+import PageContext from "../../contexts/page-context";
+
 const Section = () => {
-    // Personal info
-    // Please provide your name, email address, and phone number. 
-    // Select your plan
-    // You have the option of monthly or yearly billing.
-    // Pick add-ons
-    // Add-ons help enhance your gaming experience.
-    // Finishing up
-    // Double-check everything looks OK before confirming.
-    let sectionTitle = 'ajm tajtle';
-    let sectionParagraph = 'ajm paragraph';
-    return (
+  const pageCtx = useContext(PageContext);
+  const sectionTitles = [
+    "Personal info",
+    "Select your plan",
+    "Pick add-ons",
+    "Finishing up",
+  ];
+  const sectionParagraphs = [
+    "Please provide your name, email address, and phone number.",
+    "You have the option of monthly or yearly billing.",
+    "Add-ons help enhance your gaming experience.",
+    "Double-check everything looks OK before confirming.",
+  ];
+
+  return (
     <section>
-        <h1>{sectionTitle}</h1>
-        <p>{sectionParagraph}</p>
+      <h1>{sectionTitles[pageCtx.page]}</h1>
+      <p>{sectionParagraphs[pageCtx.page]}</p>
     </section>
-)}
+  );
+};
 
 export default Section;

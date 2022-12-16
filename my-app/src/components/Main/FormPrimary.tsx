@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { Formik, FormikHelpers } from "formik";
+import { Formik } from "formik";
 import PageContext from "../../contexts/page-context";
+import Section from './Section';
 import FormFirst from "./FormFirst";
 import FormSecond from "./FormSecond";
 import FormThird from "./FormThird";
@@ -21,6 +22,7 @@ const FormPrimary = () => {
 
   return (
     <div className={classes.form__control}>
+       <Section />
       <Formik initialValues={pageCtx.data} onSubmit={handleSubmit}>
         {pages[pageCtx.page]}
       </Formik>
