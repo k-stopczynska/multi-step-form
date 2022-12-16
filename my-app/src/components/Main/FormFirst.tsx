@@ -1,7 +1,10 @@
+import { useContext } from 'react';
 import { Field, Form } from "formik";
+import PageContext from '../../contexts/page-context';
 import StepChanger from '../Footer/StepChanger';
 import classes from "./FormFirst.module.css";
 const FormFirst = () => {
+  const pageCtx = useContext(PageContext);
   return (
     <Form className={classes.form__controls}>
       <div className={classes.form__wrapper}>

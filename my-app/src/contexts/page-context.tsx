@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react";
-import FormFirst from '../components/Main/FormFirst';
-import FormSecond from '../components/Main/FormSecond';
-import FormThird from '../components/Main/FormThird';
-import ThankYouCard from '../components/Main/ThankYouCard';
 import {Values} from '../interfaces';
 
 const PageContext = React.createContext({
@@ -25,8 +21,8 @@ export const PageContextProvider = (props: any) => {
       name: "",
       email: "",
       phone: "",
-       picked: "",
-       toggle: false,
+      picked: "",
+      toggle: false,
     })
 
   // useEffect(() => {
@@ -48,7 +44,7 @@ export const PageContextProvider = (props: any) => {
     setPage((prevPage) => prevPage - 1)
   };
   return (
-    <PageContext.Provider value={{ onSubmit: submitHandler, onClick: clickHandler, page: page, data: data  }}>
+    <PageContext.Provider value={{ onSubmit: submitHandler, onClick: clickHandler, page, data }}>
       {props.children}
     </PageContext.Provider>
   );

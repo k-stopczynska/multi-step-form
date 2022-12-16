@@ -1,9 +1,10 @@
+//import { Values } from '../interfaces';
 import './Button.css'
 
 const Button: React.FC<{
   type: "button" | "submit";
-  onClick?: () => void;
-  onSubmit?: () => void;
+  onClick?: (data: any) => void;
+  onSubmit?: (data: any) => void;
   classes: string;
   name: string;
 }> = (props) => {
