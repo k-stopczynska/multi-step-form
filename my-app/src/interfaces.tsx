@@ -4,5 +4,5 @@ export interface Values {
     phone: string;
      picked: string;
      toggle: boolean;
-     addons: never[]
+     addons: never[];
   }

@@ -1,5 +1,6 @@
 .form__control {
   position: absolute;
+  height: 40%;
   width: 90%;
   top: 20%;
 }

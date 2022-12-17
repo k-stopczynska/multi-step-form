@@ -13,7 +13,7 @@ main {
     position: absolute;
     top: 10rem;
     left: 1em;
-    min-height: 50vh;
+    height: max-content;
     width: 90vw;
     padding: 1.5em 1em;
 }

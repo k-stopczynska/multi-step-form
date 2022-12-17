@@ -1,11 +1,15 @@
+import { useContext, useRef } from 'react';
 import { Field, Form } from "formik";
 import CustomCheckbox from './CustomCheckbox';
 import StepChanger from '../Footer/StepChanger';
 import logo1 from "../../assets/images/icon-arcade.svg";
 import logo2 from "../../assets/images/icon-advanced.svg";
 import logo3 from "../../assets/images/icon-pro.svg";
+import PageContext from '../../contexts/page-context';
 import classes from "./FormSecond.module.css";
 const FormSecond = () => {
+  const pageCtx = useContext(PageContext);
+  const prices = [9, 12, 15];
   return (
     <Form className={classes.form__controls}>
       <div className={classes.form__container}>
@@ -13,7 +17,7 @@ const FormSecond = () => {
         <div className={classes.label__wrapper}>
           <label className={classes.label1} htmlFor="arcade">Arcade</label>
           <Field className={classes.radio} id="arcade" type="radio" name="picked" value="Arcade"></Field>
-          <p>price</p>
+          <p>$ {pageCtx.data.toggle === false ? prices[0] : prices[0] * 10}/ {pageCtx.data.toggle === false ? 'mo' : 'yr'}</p>
         </div>
       </div>
       <div className={classes.form__container}>
@@ -21,7 +25,7 @@ const FormSecond = () => {
         <div className={classes.label__wrapper}>
           <label className={classes.label2} htmlFor="advanced"> Advanced </label>
           <Field className={classes.radio} id="advanced" type="radio" name="picked" value="Advanced"></Field>
-          <p>price</p>
+          <p>$ {pageCtx.data.toggle === false ? prices[1] : prices[1] * 10}/ {pageCtx.data.toggle === false ? 'mo' : 'yr'}</p>
         </div>
       </div>
       <div className={classes.form__container}>
@@ -29,7 +33,7 @@ const FormSecond = () => {
         <div className={classes.label__wrapper}>
           <label className={classes.label3} htmlFor="pro">Pro</label>
           <Field className={classes.radio} id="pro" type="radio" name="picked" value="Pro"></Field>
-          <p>price</p>
+          <p>$ {pageCtx.data.toggle === false ? prices[2] : prices[2] * 10}/{pageCtx.data.toggle === false ? 'mo' : 'yr'}</p>
         </div>
       </div>
     <CustomCheckbox />
