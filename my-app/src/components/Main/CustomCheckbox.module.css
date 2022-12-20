@@ -38,11 +38,11 @@
   transition: 0.3s;
 }
 
-.form__input:checked + .form__label {
+.form__input + .form__label {
   background: var(--marine-blue);
 }
 
-.form__input:checked + .form__label::after {
+.form__input-active + .form__label::after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
