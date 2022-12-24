@@ -17,7 +17,7 @@ const FormThird = () => {
           <label htmlFor="online-services">Online services</label>
           <span>Access to multiplayer games</span>
         </div>
-        <p>price</p>
+        <p>+$1/mo</p>
       </div>
       <div className={classes.form__controls}>
         <div className={classes.form__input}>
@@ -32,7 +32,7 @@ const FormThird = () => {
           <label htmlFor="larger-storage">Larger storage</label>
           <span>Extra 1TB of cloud save</span>
         </div>
-        <p>price</p>
+        <p>+$2/mo</p>
       </div>
       <div className={classes.form__controls}>
         <div className={classes.form__input}>
@@ -47,7 +47,7 @@ const FormThird = () => {
           <label htmlFor="customizable profile">Customizable profile</label>
           <span>Custom theme on your profile</span>
         </div>
-        <p>price</p>
+        <p>+$2/mo</p>
       </div>
       <StepChanger />
     </Form>
