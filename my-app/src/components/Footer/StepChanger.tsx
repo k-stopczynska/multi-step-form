@@ -6,6 +6,7 @@ import classes from "./StepChanger.module.css";
 const StepChanger = () => {
   const names = ["Go Back", "Next Step", "Confirm"];
   const pageCtx = useContext(PageContext);
+ 
 
   const prevStepHandler = () => {
     pageCtx.onClick(pageCtx.data);

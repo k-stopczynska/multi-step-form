@@ -13,7 +13,7 @@
 .button__forward {
     color: var(--white);
 background: var(--marine-blue);
-}
+} 
 
 .button__reward {
     background: transparent;

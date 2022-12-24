@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { Field, Form } from "formik";
 import CustomCheckbox from './CustomCheckbox';
 import StepChanger from '../Footer/StepChanger';
@@ -9,7 +9,6 @@ import PageContext from '../../contexts/page-context';
 import classes from "./FormSecond.module.css";
 const FormSecond = () => {
   const [value, setValue] = useState(false);
-  const pageCtx = useContext(PageContext);
   const prices = [9, 12, 15];
   return (
     <Form className={classes.form__controls}>

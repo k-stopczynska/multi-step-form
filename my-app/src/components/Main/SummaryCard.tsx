@@ -5,7 +5,9 @@ import StepChanger from "../Footer/StepChanger";
 import classes from "./SummaryCard.module.css";
 
 const SummaryCard = () => {
+
   const pageCtx = useContext(PageContext);
+  console.log(pageCtx.data.toggle)
   return (
     <Form className={classes.card__wrapper}>
       <div className={classes.card__container}>
