@@ -45,7 +45,7 @@ const FormPrimary = () => {
         validationSchema={signupSchema}
         onSubmit={handleSubmit}
       >
-          { pages[pageCtx.page] }
+        {pages[pageCtx.page]}
       </Formik>
     </div>
   );

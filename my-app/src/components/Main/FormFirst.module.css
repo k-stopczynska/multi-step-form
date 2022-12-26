@@ -24,3 +24,11 @@
 label {
   font-size: 14px;
 }
+
+.form__error {
+  color: var(--strawberry-red);
+  font-size: 14px;
+  font-weight:600;
+  align-self: flex-end;
+  margin-top: .5rem;
+}
