@@ -17,7 +17,7 @@
   margin-bottom: 1rem;
 }
 
-.card__img {
+.card__image {
   height: 40px;
   width: 40px;
   background: white;
@@ -27,18 +27,18 @@
   left: calc((70px - 40px) / 2);
 }
 
-.card img {
+.card__img {
     background: red;
   position: absolute;
   top: calc((70px - 40px) / 2);
   left: calc((70px - 40px) / 2);
 }
 
-.card h1 {
+.card__heading {
   margin-bottom: 2rem;
 }
 
-.card p {
+.card__paragraph {
   font-size: 16px;
   text-align: center;
 }

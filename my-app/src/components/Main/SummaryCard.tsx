@@ -25,7 +25,7 @@ const SummaryCard = () => {
           <p>price</p>
         </div>
       </div>
-      <div className={classes.card__paragraph_total}>
+      <div className={classes['card__paragraph-total']}>
         <p>Total (per {pageCtx.data.toggle === false ? "month" : "year"})</p>
         <p>price</p>
       </div>

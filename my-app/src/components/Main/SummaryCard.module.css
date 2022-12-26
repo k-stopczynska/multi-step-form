@@ -23,7 +23,7 @@
     font-weight: 700;
 }
 
-.card__paragraph_total {
+.card__paragraph-total {
     padding: 2em 1em;
     display: flex;
     flex-direction: row;

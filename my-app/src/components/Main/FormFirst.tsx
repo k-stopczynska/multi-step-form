@@ -6,9 +6,9 @@ const FormFirst = () => {
   return (
     <Form className={classes.form__controls}>
       <div className={classes.form__wrapper}>
-        <label htmlFor="name">Name</label>
+        <label className={classes.form__label} htmlFor="name">Name</label>
         <Field
-          className={classes.input__field}
+          className={classes.form__input}
           id="name"
           name="name"
           placeholder="Stephen King"
@@ -20,9 +20,9 @@ const FormFirst = () => {
         />
       </div>
       <div className={classes.form__wrapper}>
-        <label htmlFor="email">Email Address</label>
+        <label className={classes.form__label} htmlFor="email">Email Address</label>
         <Field
-          className={classes.input__field}
+          className={classes.form__input}
           id="email"
           name="email"
           placeholder="stephen.king.lorem.com"
@@ -34,9 +34,9 @@ const FormFirst = () => {
         />
       </div>
       <div className={classes.form__wrapper}>
-        <label htmlFor="phone">Phone number</label>
+        <label className={classes.form__label} htmlFor="phone">Phone number</label>
         <Field
-          className={classes.input__field}
+          className={classes.form__input}
           id="phone"
           name="phone"
           placeholder="+1 234 567 890"
